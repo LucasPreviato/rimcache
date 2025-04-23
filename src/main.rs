@@ -1,8 +1,8 @@
-mod cli;
-mod app;
+// mod cli;
+// mod app;
 
-use cli::commands::build_cli;
-use app::build_cache;
+// use cli::commands::build_cli;
+// use app::build_cache;
 
 fn main() {
     let  matches = build_cli().get_matches();
@@ -10,7 +10,7 @@ fn main() {
     match matches.subcommand(){
         Some(("build", _sub_matches)) => {
 
-            build_cache::run();
+            build_cache::run(); // TODO: Implement build command
         }
         Some(("clean", _sub_matches)) => {
             println!("Cleaning cache");//TODO: Implement clean command
