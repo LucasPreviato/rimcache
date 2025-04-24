@@ -1,7 +1,7 @@
 mod cli;
 mod app;
-mod infra;  
-
+mod infra;
+mod domain;
 use cli::commands::build_cli;
 use app::build_cache;
 
