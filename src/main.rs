@@ -1,8 +1,9 @@
-// mod cli;
-// mod app;
-
-// use cli::commands::build_cli;
-// use app::build_cache;
+mod cli;
+mod app;
+mod infra;
+mod domain;
+use cli::commands::build_cli;
+use app::build_cache;
 
 fn main() {
     let  matches = build_cli().get_matches();
